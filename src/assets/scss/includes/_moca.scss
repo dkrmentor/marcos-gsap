@@ -1,0 +1,92 @@
+.moca-section {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden !important;
+
+  .moca-block {
+    background-image: url(../../images/moca-Vector.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    min-height: 800px;
+    max-width: 1248px;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+
+    .mv1 {
+      width: 350px;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 100px;
+      left: -300px;
+    }
+
+    .mv2 {
+      width: 350px;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 130px;
+      left: -260px;
+    }
+
+    .mv3 {
+      width: 350px;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 100px;
+      right: -500px;
+
+    }
+
+    .mv4 {
+      width: 350px;
+      height: auto;
+      display: block;
+      position: absolute;
+      bottom: 0px;
+      right: -80px;
+
+    }
+
+
+
+  }
+
+
+
+}
+
+//animations
+.mv1,
+.mv2,
+.mv3,
+.mv4 {
+  animation: throw 15s ease 5s both infinite;
+}
+
+@keyframes throw {
+
+  50% {
+    transform: translate(0, 10vh);
+  }
+
+  100% {
+    transform: translate(0vw, 0);
+  }
+}

@@ -1,0 +1,312 @@
+.story-of-mocas-section {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &.dark {
+    background-image: url(../../images/background-dark-space.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .orbs {
+      background-image: url(../../images/orbs.png);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      top:0;
+      bottom:0;
+      left: 0;
+      right:0;
+    }
+
+    .story-logo-counter-block {
+      background-image: none;
+    }
+
+    .invest-realm {
+      bottom: 0 !important;
+    }
+  }
+
+  .story-logo-counter-block {
+    background-image: url(../../images/mocaverse-rings.svg);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100%;
+    min-height: 800px;
+    max-width: 1248px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    @media only screen and (max-width: 1440px) {
+      min-height: 600px;
+    }
+
+    .story-logo {
+      margin: 30px 0;
+      width: 350px;
+    }
+
+    .learn-realm {
+      width: 350px;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 100px;
+      left: 121px;
+
+      @media only screen and (max-width: 1440px) {
+        width: 280px;
+        top: 108px;
+        left: 165px;
+      }
+
+      .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+
+    .dogood-realm {
+      width: 350px;
+      height: auto;
+      display: block;
+      position: absolute;
+      top: 23px;
+      right: 56px;
+
+      @media only screen and (max-width: 1440px) {
+        width: 290px;
+        top: 37px;
+        right: 108px;
+      }
+
+      .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+
+    .invest-realm {
+      width: 350px;
+      height: auto;
+      display: block;
+      position: absolute;
+      bottom: -224px;
+      left: 30px;
+
+      @media only screen and (max-width: 1440px) {
+        width: 280px;
+        bottom: -224px;
+        left: 150px;
+      }
+
+      .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+
+    .play-realm {
+      width: 350px;
+      height: auto;
+      display: block;
+      position: absolute;
+      bottom: 106px;
+      right: 74px;
+
+      @media only screen and (max-width: 1440px) {
+        width: 300px;
+        bottom: 73px;
+        right: 133px;
+      }
+
+      .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+    }
+  }
+
+  .story-wrapper {
+    text-align: center;
+    position: relative;
+
+    .paragraph {
+      position: absolute;
+      top: 30%;
+      padding: 1em;
+      color: white;
+    }
+  }
+
+  .story-final {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 720px;
+
+    .sun-blob {
+      background-image: url(../../images/sun-blob.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 692px;
+      height: 276px;
+      display: block;
+      position: absolute;
+      left: calc(50% - 346px);
+      top: 430px;
+    }
+
+    .rainbow {
+      background-image: url(../../images/rainbow.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 823px;
+      height: 539px;
+      display: block;
+      position: absolute;
+      left: calc(50% - 411px);
+      z-index: -1;
+    }
+
+    .portal {
+      background-image: url(../../images/portal-all.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 423px;
+      height: 438px;
+      display: block;
+      position: absolute;
+      left: calc(50% - 211px);
+      top: 110px;
+    }
+
+    .clouds {
+      background-image: url(../../images/clouds.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 788px;
+      height: 501px;
+      display: block;
+      position: absolute;
+      left: calc(45% - 394px);
+      top: 27px;
+      z-index: -1;
+    }
+
+    .moca {
+      background-image: url(../../images/Moca.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 135px;
+      height: 140px;
+      display: block;
+      position: absolute;
+      left: calc(46% - 67px);
+      top: 310px;
+    }
+
+    .sun-blob {
+      background-image: url(../../images/sun-blob.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 692px;
+      height: 276px;
+      display: block;
+      position: absolute;
+      left: calc(50% - 346px);
+      top: 430px;
+
+      .text-block {
+        width: 417px;
+        left: calc(50% - 208px);
+        top: 123px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+        position: relative;
+      }
+    }
+
+    .unicorn {
+      background-image: url(../../images/unicorn.png);
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 986px;
+      height: 373px;
+      display: block;
+      position: absolute;
+      left: calc(45% - 493px);
+      top: 337px;
+
+      .text-block {
+        width: 431px;
+        left: calc(58% - 215px);
+        top: 123px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+        position: relative;
+
+        p {
+          margin-bottom: 10px;
+        }
+
+        span {
+          color: #0080CE;
+        }
+      }
+
+      .btn {
+        width: 123px;
+        margin: 0 auto;
+        padding: 0;
+        height:43px;
+
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

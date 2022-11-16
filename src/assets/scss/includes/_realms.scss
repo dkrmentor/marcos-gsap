@@ -1,0 +1,374 @@
+.left-side {
+  width: 50%;
+  margin-bottom: 15%;
+
+
+  @media only screen and (max-width: 1440px) {
+    margin-bottom: 20%;
+  } 
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 45%;
+  } 
+
+}
+
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-weight: 700;
+  height: 100vh;
+  flex-direction: column;
+
+  .content-block {
+    position: relative;
+  }
+
+  .realms-learn {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+
+  .realms-do-good {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+
+    .realm-info-bg {
+      .text {
+        top: -1px;
+      }
+    }
+  }
+
+  .realms-play {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+
+  .realms-linvest {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+  }
+
+  .realm-info-bg {
+    background-image: url(../../images/realm-info-bg.svg);
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:347px;
+    width:516px;
+    position: relative;
+
+    .text {
+      position: absolute;
+      width: 257px;
+      top: -57px;
+      left: -16px;
+    }
+
+    .realm-text {
+      position: relative;
+      width: 370px;
+      top: 132px;
+      left: 73px;
+      height: 120px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+    }
+
+    .realm-utility {
+      position: absolute;
+      top: 296px;
+      left: 100px;
+      height: 40px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      display: flex;
+
+      &:before {
+        content:"";
+        display: block;
+        background-image: url(../../images/lock.svg);
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width:28px;
+        height:41px;
+        margin-right: 15px;
+      }
+    }
+
+
+    &.utility {
+      background-image: url(../../images/realm-info-bg-utility.svg);
+      background-position: center left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height:480px;
+      width:516px;
+      position: relative;
+
+
+    .text {
+      position: absolute;
+      width: 257px;
+      top: -116px;
+      left: -65px;
+    }
+
+    .realm-text {
+      position: relative;
+      width: 370px;
+      top: 70px;
+      left: 35px;
+      height: 120px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+    }
+
+    .realm-utility {
+      position: absolute;
+      top: 250px;
+      left: 34px;
+      height: 214px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      color: #000000;
+      display: flex;
+      width: 440px;
+
+      &:before {
+          content:"";
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////right side
+
+
+.right-side {
+  width: 50%;
+  position: sticky;
+  top: 0;
+}
+
+
+.realms-section {
+  min-height: 400vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+
+
+
+  // height: auto;
+  .realm-block {
+    background-image: url(../../images/orbit.svg);
+
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 100%;
+    min-height: 1200px;
+    max-width: 1248px;
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+
+    
+    .invest-realm {     
+      height: auto;
+      display: block;
+      position: absolute;
+  
+
+    }
+
+    .play-realm {
+
+      height: auto;
+      display: block;
+      position: absolute;
+
+
+
+
+    }
+
+    .dogood-realm {
+    
+      height: auto;
+      display: block;
+      position: absolute;
+  
+
+
+    }
+  }
+
+
+
+}
+
+
+
+
+
+.p1{
+  .invest-realm {
+    width: 300px;
+    top: 120px;
+    right: -20px;   
+    @media only screen and (max-width: 1440px) {
+      width: 250px;
+      top: 120px;
+      right: -20px;
+    }
+      }
+
+  .play-realm {
+    width: 650px;
+    bottom: 400px;
+    left: -80px;
+    @media only screen and (max-width: 1440px) {
+      bottom: 400px;
+      left: -80px;
+      width: 600px;
+    }
+
+
+  }
+
+  .dogood-realm {  
+    width: 250px;
+    bottom: 280px;
+    right: -20px;
+    @media only screen and (max-width: 1440px) {  
+      width: 200px;
+      bottom: 260px;
+      right: -20px;
+    }
+
+
+  }
+
+}
+.p2{
+  .invest-realm {
+    width: 300px;
+    top: 120px;
+    right: 100px;   
+    @media only screen and (max-width: 1440px) {
+      width: 250px;
+      top: 120px;
+      right: -120px;
+    }
+      }
+
+  .play-realm {
+    width: 500px;
+    bottom: 240px;
+    left: 200px;
+    @media only screen and (max-width: 1440px) {
+      bottom: 400px;
+      left: -80px;
+      width: 600px;
+    }
+
+
+  }
+
+
+
+}
+.p3{
+  .invest-realm {
+    width: 300px;
+    top: 120px;
+    right: -20px;   
+    @media only screen and (max-width: 1440px) {
+      width: 250px;
+      top: 120px;
+      right: -20px;
+    }
+      }
+
+  .play-realm {
+    width: 650px;
+    bottom: 400px;
+    left: -80px;
+    @media only screen and (max-width: 1440px) {
+      bottom: 400px;
+      left: -80px;
+      width: 600px;
+     
+    }
+
+
+  }
+
+  .dogood-realm {  
+    width: 250px;
+    bottom: 280px;
+    right: -20px;
+    @media only screen and (max-width: 1440px) {  
+      bottom: 260px;
+      right: -20px;
+      width: 200px; 
+    }
+
+
+  }
+
+}
